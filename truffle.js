@@ -9,17 +9,17 @@ module.exports = {
       port: 8545,
       network_id: '*', // Match any network id
     },
-    ropsten: {
-      provider: () =>
-        new HDWalletProvider(
+    ropsten: {      
+      gas: 4700000,
+			gasPrice: 100000000000,
+      provider: new HDWalletProvider(
           'adapt tower lens embrace case picture result theme mail again spring chimney',
-          'https://ropsten.infura.io/v3/99bafb9250824fadb73e8576c3b5bc67'
+          'https://ropsten.infura.io/v3/d76d1fc6e9744bc183135da75b033a20'          
         ),
       network_id: 3,     
     },
     kovan: {
-      provider: () =>
-        new HDWalletProvider(
+      provider:new HDWalletProvider(
           process.env.MNENOMIC,
           'https://kovan.infura.io/' + process.env.INFURA_API_KEY
         ),

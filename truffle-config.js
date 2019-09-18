@@ -16,11 +16,13 @@ module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
   ropsten: {
+    from:"0x783980f186fa0b28C2a5e268E175d6AC79517628",
     provider: () =>
       new HDWalletProvider(
         'adapt tower lens embrace case picture result theme mail again spring chimney',
         'https://ropsten.infura.io/v3/99bafb9250824fadb73e8576c3b5bc67'
       ),
-    network_id: 3   
+      gas: 4500000,
+      network_id: 3   
   },
 };
